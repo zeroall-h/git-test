@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page List</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #444;
+      border-left: 4px solid #007bff;
+      padding-left: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    thead {
+      background-color: #e9f1fb;
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    thead th {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f9fbfc;
+    }
+
+    tbody tr:hover {
+      background-color: #e6f0ff;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        padding: 10px;
+      }
+
+      td {
+        text-align: left;
+        padding: 10px;
+        border: none;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 4px;
+        color: #555;
+      }
+    }
+  </style>
+</head>
+
+<body style="padding: 10px">
+  <h1>Galaxy Unpacked (2H 2025)</h1>
+  <h2>RSVP Card & Mail</h2>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th colspan="2">Unpacked & Night</th>
+        <th colspan="2">Night Only</th>
+        <th colspan="2">공통</th>
+      </tr>
+    </thead>
+
+    <tr>
+      <td>RSVP Card</td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Invitation Mail</td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>QR Code Mail</td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td colspan="2">
+        <a href="#" target="_blank">Another Mail</a> <br>
+        <a href="#" target="_blank">Save Device</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Reminder Mail</td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Thank you Mail</td>
+      <td><a href="#" target="_blank">-</a></td>
+      <td><a href="#" target="_blank">-</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td><a href="#" target="_blank">Mail</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+    </tr>
+  </table>
+
+  <h2>Registation</h2>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Unpacked & Night</th>
+        <th>Night Only</th>
+        <th>공통</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Registation 페이지</td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Error</a></td>
+    </tr>
+    <tr>
+      <td>QR 페이지</td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td><a href="#" target="_blank">Web</a></td>
+      <td>
+        <a href="#" target="_blank">Another Mail</a> <br>
+        <a href="#" target="_blank">Save Device</a>
+      </td>
+    </tr>
+    <tr>
+      <td>에러 페이지</td>
+      <td>-</td>
+      <td>-</td>
+      <td>
+        <a href="#" target="_blank">Invalid Access</a> <br>
+        <a href="#" target="_blank">System Error</a> <br>
+      </td>
+    </tr>
+
+  </table>
+
+  <h2>Admin</h2>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Unpacked & Night</th>
+        <th>Night Only</th>
+        <th>공통</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Admin 페이지</td>
+      <td>-</td>
+      <td>-</td>
+      <td>
+        <a href="#" target="_blank">Web</a> <br>
+        <a href="#" target="_blank">Error</a>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

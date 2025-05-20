@@ -10,6 +10,14 @@
 <body>
   <img src="image/key_visual.jpg" alt="">
   <img src="image/final_gradient_with_smooth_black_blend_50px.png" alt="">
+  <!-- prettier-ignore -->
+  <% include('compoent/button.ejs',{ 
+    text:'awef' })%>
+    <!-- prettier-ignore-end -->
 </body>
+<% if (user) { %>
+  <h1>Hello <%= user.name %>
+  </h1>
+  <% } %>
 
 </html>

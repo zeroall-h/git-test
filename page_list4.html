@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page List</title>
+  <style>
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #007bff;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      font-size: 1.4rem;
+      border-left: 4px solid #007bff;
+      padding-left: 12px;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Page List</h1>
+
+  <h2 class="section-title">A행사사</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Card</h3>
+      <div class="links">
+        <a href="#">Mail</a>
+        <a href="#">Web</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Mail 1</h3>
+      <div class="links">
+        <a href="#">Mail</a>
+        <a href="#">Web</a>
+      </div>
+    </div>
+    <!-- ... -->
+  </div>
+</body>
+
+</html>

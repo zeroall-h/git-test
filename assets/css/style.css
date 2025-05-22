@@ -1,0 +1,193 @@
+.pc {
+  display: block;
+}
+.mo {
+  display: none;
+}
+/************* Layer & Share ************/
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.layer.is_show {
+  display: flex;
+}
+.layer_content {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1 0 auto;
+}
+.layer_content.is_show {
+  display: flex;
+}
+.layer_content .title {
+  font-size: 50px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  line-height: 68px;
+}
+.layer_content .desc {
+  max-width: 600px;
+  margin-top: 72px;
+  font-size: 25px;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+  line-height: 1.36;
+}
+.policy_content {
+  max-width: 600px;
+  text-align: left;
+  overflow-y: auto;
+  padding: 0 18px 0 23px;
+  margin: 72px auto 0;
+  box-sizing: border-box;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+  word-break: break-word;
+  font-size: 18px;
+  line-height: 34px;
+  color: #000;
+}
+.policy_content a {
+  color: #000;
+}
+.policy_content::-webkit-scrollbar {
+  width: 4px;
+}
+.policy_content::-webkit-scrollbar-track {
+  margin-right: 6px;
+}
+.policy_content::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #b8b8b8;
+}
+.policy_content li {
+  position: relative;
+  padding-left: 25px;
+}
+.policy_content li + li {
+  margin-top: 34px;
+}
+.policy_content li .num {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+}
+.box_agree {
+  overflow-y: auto;
+  padding: 100px 60px 72px;
+}
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 376px;
+  min-height: 72px;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.btn_agree {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+}
+.btn_close {
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+}
+.btn_close::before {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../image/ico_close.svg) center / cover no-repeat;
+  content: "";
+}
+.box_btn_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.box_btn_bottom .btn + .btn{
+  margin-top: 16px;
+}
+@media screen and (max-width: 900px) {
+  .pc {
+    display: none;
+  }
+  .mo {
+    display: block;
+  }
+ .policy_content {
+    padding: 0 0 0 4px;
+    margin: 24px auto 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .policy_content a {
+    color: #000;
+  }
+  .policy_content li {
+    padding-left: 20px;
+  }
+  .policy_content li + li {
+    margin-top: 20px;
+  }
+  .policy_content li .num {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+  }
+  .box_agree {
+    overflow-y: auto;
+    padding: 40px 16px;
+  }
+  .box_agree .title {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+  }
+  .btn {
+    width: auto;
+    min-height: auto;
+    padding: 0;
+  }
+  .btn_agree {
+    width: 192px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn_close {
+    font-size: 14px;
+  }
+  .btn_close::before {
+    width: 22px;
+    height: 22px;
+  }
+  .box_btn_bottom {
+    margin-top: 0;
+    padding: 24px 16px 20px;
+  }
+}

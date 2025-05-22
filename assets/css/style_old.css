@@ -1,0 +1,1371 @@
+.mo {
+  display: none;
+}
+#skip_navi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+#skip_navi a {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+#skip_navi a:focus {
+  bottom: auto;
+}
+
+.mo {
+  display: none;
+}
+.container {
+  font-family: "Samsung Sharp Sans 500";
+}
+.box_key_visual {
+  background: #000;
+}
+.box_key_visual img {
+  width: 100%;
+}
+
+.section {
+  display: none;
+}
+.section.is_show {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 1196px;
+  width: 100%;
+  padding: 80px 20px 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.box_registration.is_first .content {
+  padding-bottom: 64px;
+}
+
+.box_comfirm .content {
+  padding-bottom: 60px;
+}
+
+.box_title {
+  text-align: center;
+  color: #000;
+}
+
+.box_title .sub_title {
+  margin-bottom: 8px;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: "Samsung Sharp Sans 700";
+  letter-spacing: -0.2px;
+}
+.box_title .title {
+  font-size: 55px;
+  line-height: 72px;
+  font-family: "Samsung Sharp Sans 700";
+}
+
+.box_title .desc {
+  margin-top: 9px;
+  font-size: 25px;
+  line-height: 50px;
+  color: #000;
+  letter-spacing: -0.2px;
+}
+.box_title .desc .bold {
+  font-family: "Samsung Sharp Sans 700";
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 448px;
+  height: 70px;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  background: #f2f2f2;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Samsung Sharp Sans 700";
+  font-size: 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-top: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+.btn:disabled {
+  background: #f2f2f2;
+  color: #aaa;
+}
+
+.box_form {
+  max-width: 448px;
+  margin: 0 auto;
+}
+.box_form .box_input {
+  margin-top: 86px;
+}
+.box_input {
+  position: relative;
+  min-height: 30px;
+}
+.box_input .input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid #000;
+  height: 47px;
+  font-size: 32px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  color: #000;
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+}
+.box_input .input:focus {
+  outline: 0;
+}
+.box_input .input::placeholder {
+  color: #aaa;
+}
+.box_input .btn_clear {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: url(../images/icon_clear.svg) center/28px no-repeat;
+  right: -7px;
+  top: 1px;
+  padding: 7px;
+  box-sizing: content-box;
+}
+.box_input .error_text {
+  margin: 10px 0 28px;
+  font-size: 12px;
+  color: #ff3c3c;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+  display: none;
+  line-height: 18px;
+}
+.box_input .error_text a {
+  color: currentColor;
+}
+.box_input.is_error .input {
+  border-color: #ff3c3c;
+}
+.box_input.is_error .error_text {
+  display: block;
+  text-align: left;
+}
+
+.register_code {
+  display: none;
+  margin-top: 86px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 52px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+}
+.register_code.is_show {
+  display: block;
+}
+.box_checkbox {
+  margin-top: 20px;
+}
+.box_checkbox .label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 4px 29px 0 26px;
+  border-radius: 20px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  font-size: 20px;
+  color: #000;
+  background: #f2f2f2;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in;
+}
+
+.box_checkbox input:disabled + .label {
+  background: #f2f2f2;
+  color: #aaa;
+}
+.box_checkbox .label:hover {
+  background: #000;
+  color: #fff;
+}
+.box_checkbox input:checked + .label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon_checkbox.svg) center/cover no-repeat;
+  margin-right: 12px;
+  transform: translateY(-2px);
+}
+.box_checkbox input:checked + .label {
+  justify-content: flex-start;
+}
+.box_checkbox input:checked + .label .icon {
+  display: none;
+}
+
+.policy_desc {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 12px;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+  line-height: 18px;
+  text-align: left;
+}
+.policy_desc em {
+  text-decoration: underline;
+}
+.policy_content {
+  text-align: left;
+  max-height: 270px;
+  overflow-y: auto;
+  padding: 0 18px 0 23px;
+  margin: 72px 18px 0 0;
+  box-sizing: border-box;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+  word-break: break-word;
+  font-size: 18px;
+  line-height: 34px;
+  color: #000;
+}
+.policy_content a {
+  color: #000;
+}
+.policy_content::-webkit-scrollbar {
+  width: 4px;
+}
+.policy_content::-webkit-scrollbar-track {
+  margin-right: 6px;
+}
+.policy_content::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #b8b8b8;
+}
+.policy_content li {
+  position: relative;
+  padding-left: 25px;
+}
+.policy_content li + li {
+  margin-top: 34px;
+}
+.policy_content li .num {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+.box_policy .policy_content {
+  margin: 80px auto 0;
+}
+
+.box_bottom {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.footer_logo {
+  font-size: 20px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+}
+.footer_info {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.qr_card {
+  width: 100%;
+  margin-top: 97px;
+  padding: 85px 0;
+  border-radius: 86px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.qr_card .qr_name {
+  font-size: 32px;
+  line-height: 39px;
+  color: #000;
+  letter-spacing: -0.1px;
+  font-family: "Samsung Sharp Sans 700";
+}
+
+.qr_card .box_qr {
+  width: 270px;
+  height: 270px;
+  margin: 38px auto 0;
+  padding: 4px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.qr_card .box_qr img {
+  width: 100%;
+  height: 100%;
+}
+.qr_card .category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  padding: 4px 32px 0;
+  margin-top: 21px;
+  border-radius: 50px;
+  font-size: 28px;
+  font-family: "Samsung Sharp Sans 700";
+  color: #fff;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+
+.qr_card .category.category_samsung {
+  background: #1428a0;
+}
+.qr_card .category.category_influencer {
+  background: #9ffac7;
+  color: #000;
+}
+.qr_card .category.category_partner {
+  background: #0092fe;
+  color: #fff;
+}
+.qr_card .category.category_media {
+  background: #4768cc;
+}
+.qr_card .category.category_samsungmembers {
+  background: #64e9e3;
+  color: #000;
+}
+
+.qr_card .qr_desc {
+  margin-top: 29px;
+  font-size: 22px;
+  line-height: 36px;
+  color: #000;
+}
+
+.box_share {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+.box_share img {
+  width: 100%;
+}
+.box_share .btn_wallet {
+  width: 210px;
+}
+.box_share .btn_share {
+  width: 86px;
+}
+
+.wallet_desc {
+  margin-top: 26px;
+  font-size: 16px;
+  color: #000;
+  opacity: 0.56;
+}
+
+.content_title {
+  margin-top: 92px;
+  font-size: 55px;
+  line-height: 72px;
+  text-align: center;
+  font-family: "Samsung Sharp Sans 700";
+}
+
+.sub_content_title {
+  padding-left: 60px;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000;
+  font-family: "Samsung Sharp Sans 700";
+  margin-top: 41px;
+}
+.sub_content_title ~ .sub_content_title {
+  margin-top: 44px;
+}
+
+.sub_content_title + .list_info.type_qr {
+  margin-top: 16px;
+}
+.box_info {
+  display: none;
+}
+.box_info.is_show {
+  display: block;
+}
+
+.list_info {
+  display: flex;
+  flex-direction: column;
+  max-width: 1156px;
+  width: 100%;
+  margin: 80px auto 0;
+  padding: 41px 80px;
+  border-radius: 60px;
+  background: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.list_info .item_info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  text-align: left;
+  gap: 20px;
+}
+.list_info .item_info + .item_info {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 38px;
+  padding-top: 38px;
+}
+
+.list_info .info_title {
+  font-size: 30px;
+  line-height: 38px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  flex: none;
+}
+
+.list_info .info_desc {
+  font-size: 30px;
+  line-height: 38px;
+  min-width: 441px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.list_info .info_desc .divider {
+  opacity: 0.2;
+}
+
+.list_info.type_night {
+  margin-top: 20px;
+  padding: 30px 60px;
+}
+.list_info.type_night .info_desc {
+  max-width: 513px;
+  line-height: 52px;
+  width: 100%;
+}
+
+.list_info.type_night .item_info + .item_info {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+.list_info.type_qr {
+  margin-top: 38px;
+  padding: 22px 60px;
+}
+.list_info.type_qr .item_info {
+  align-items: flex-start;
+}
+
+.list_info.type_qr .info_title {
+  margin-top: 3px;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.list_info.type_qr .info_desc {
+  font-size: 26px;
+  line-height: 42px;
+  max-width: 747px;
+  width: 100%;
+}
+
+.list_info.type_qr .item_info + .item_info {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+
+.box_info_btn {
+  display: flex;
+  margin-top: 17px;
+  gap: 18px;
+}
+.box_info_btn .btn_info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3e85fb;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  text-decoration: none;
+}
+.box_info_btn .btn_info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  transform: translateY(-2px);
+}
+.box_info_btn .btn_info .type_location {
+  width: 13px;
+}
+.box_info_btn .btn_info .icon img {
+  width: 100%;
+}
+.map_area {
+  margin-top: 80px;
+}
+.parking_desc {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 26px;
+  color: #000;
+  letter-spacing: 0.7px;
+}
+.parking_desc .icon {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  margin-right: 8px;
+}
+.parking_desc .icon:last-of-type {
+  margin-right: 12px;
+}
+.parking_desc .icon img {
+  width: 100%;
+}
+
+.box_map img {
+  width: 100%;
+}
+.list_directions {
+  margin-top: 40px;
+}
+.list_directions .item_direction {
+  display: flex;
+  margin-top: 25px;
+  gap: 12px;
+  font-size: 26px;
+  line-height: 33px;
+  color: #000;
+  font-family: "Samsung Sharp Sans 400", sans-serif;
+  align-items: flex-start;
+}
+.list_directions .item_direction + .item_direction {
+  margin-top: 24px;
+}
+.list_directions .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+
+  transform: translateY(-2px);
+}
+.list_directions img {
+  width: 100%;
+}
+.list_directions .name {
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.list_station {
+  display: flex;
+  gap: 10px;
+  transform: translateY(3px);
+}
+.list_station.type_column {
+  flex-direction: column;
+}
+.list_station .item_station {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+.list_station .icon_station {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+.road_desc {
+  position: relative;
+  margin-top: 27px;
+  padding-left: 42px;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  font-family: "Samsung Sharp Sans 400", sans-serif;
+}
+.road_desc:before {
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: 9px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  transform: translateY(5px);
+}
+.road_desc .name {
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  letter-spacing: 0.8px;
+  margin-right: 12px;
+}
+
+.greeting_desc {
+  margin-top: 81px;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  letter-spacing: -0.3px;
+}
+
+.notice_desc {
+  max-width: 1196px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 28px;
+  color: #000;
+  opacity: 0.56;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/************* Register Page ************/
+
+.page_registation .box_registration .list_info {
+  margin-top: 60px;
+}
+/************* Register Night Page ************/
+
+.page_registation_night .register_code {
+  font-size: 44px;
+}
+.page_registation_night .box_registration .content {
+  padding-bottom: 62px;
+  max-width: 1298px;
+}
+
+.page_registation_night .box_registration .sub_content_title {
+  padding-left: 111px;
+}
+.page_registation_night .box_registration .sub_content_title:first-of-type {
+  margin-top: 60px;
+}
+.page_registation_night .sub_content_title {
+  margin-top: 100px;
+  font-size: 34px;
+}
+.page_registation_night .sub_content_title ~ .sub_content_title {
+  margin-top: 40px;
+}
+
+/************* QR Page ************/
+
+.page_qr .content {
+  padding-bottom: 80px;
+}
+.page_qr .qr_card {
+  margin-top: 80px;
+}
+/************* Layer & Share ************/
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* background: linear-gradient(360deg, #1428a0 0%, #88bfff 100%); */
+
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffff;
+}
+.layer.is_show {
+  display: flex;
+}
+.layer_content {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding-top: 0;
+  height: 100%;
+  flex: 1 0 auto;
+}
+.layer_content.is_show {
+  display: flex;
+}
+.layer_content .title {
+  font-size: 55px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+}
+.layer_content .desc {
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 1.36;
+}
+.layer form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.layer .box_text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+.layer .btn_close {
+  position: absolute;
+  top: -20px;
+  transform: translate(-50%, -100%);
+  left: 50%;
+}
+.layer .btn_close:before {
+  width: 28px;
+  height: 28px;
+  content: "";
+  display: block;
+  background: url(../images/icon_layer_close.svg) center/cover no-repeat;
+}
+
+.layer .box_layer_input {
+  display: flex;
+  width: 448px;
+  height: 37px;
+  margin-top: 84px;
+  padding: 0 4px 13px 0;
+  border-bottom: 3px solid #fff;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.layer .box_layer_input .input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+}
+.layer .box_layer_input .input:focus {
+  border: 0;
+  outline: 0;
+}
+.layer .box_layer_input .input::placeholder {
+  opacity: 0.56;
+  color: #fff;
+}
+
+.layer .box_layer_input .btn_clear:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icon_layer_clear.svg) center/cover no-repeat;
+}
+
+.layer .error_text {
+  display: none;
+}
+
+.layer .layer_content {
+  padding: 60px 20px;
+}
+
+.layer .box_bottom {
+  width: auto;
+}
+.layer .box_layer_input .error_text {
+  padding-top: 10px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  color: #ff3c3c;
+  font-size: 18px;
+  font-family: "Samsung Sharp Sans 500", sans-serif;
+}
+.layer .box_layer_input.is_error {
+  border-color: #ff3c3c;
+}
+.layer .box_layer_input.is_error .error_text {
+  display: block;
+}
+
+.layer .btn_secondary {
+  width: 448px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: #fff;
+  color: #000;
+  margin: 0 auto 30px;
+  font-size: 20px;
+  padding-top: 5px;
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+}
+.layer .btn_secondary:hover {
+  background: #000;
+  color: #fff;
+}
+.layer .btn_secondary:disabled {
+  background: #ddd;
+  color: #aaa;
+}
+
+.layer .layer_content .box_bottom {
+  padding-bottom: 0;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+  background: linear-gradient(360deg, #1428a0 0%, #88bfff 100%);
+}
+.error .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+.error .content .box_title,
+.error .content .box_title .desc {
+  color: #fff;
+}
+
+/************* Invitaion Letter ************/
+.letter_desc {
+  font-size: 24px;
+  line-height: 34px;
+  color: #000;
+}
+.letter_desc .name {
+  font-family: "Samsung Sharp Sans 700", sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+@media screen and (min-width: 1921px) {
+  .box_key_visual img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/************* Mobile ************/
+@media screen and (max-width: 900px) {
+  .pc {
+    display: none;
+  }
+  .mo {
+    display: block;
+  }
+
+  .content {
+    padding: 40px 20px 40px;
+  }
+  .box_registration.is_first .content {
+    padding-bottom: 40px;
+  }
+  .box_policy .content {
+    padding-bottom: 49px;
+  }
+  .box_policy2 .content {
+    padding-bottom: 26px;
+  }
+
+  .box_comfirm .content {
+    padding-bottom: 5px;
+  }
+
+  .btn {
+    width: calc(100% - 40px);
+    min-width: auto;
+    height: 50px;
+    font-size: 17px;
+    padding: 0 23px;
+    margin: 0 -20px 20px;
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+  }
+
+  .box_title .title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .box_title .desc {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .box_form {
+    padding: 0 30px;
+  }
+
+  .box_form .box_input {
+    margin-top: 50px;
+  }
+
+  .box_input .input {
+    border-bottom-width: 1px;
+    height: 28px;
+    font-size: 20px;
+    color: #1c1c1c;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+  }
+  .box_input .input:focus {
+    outline: 0;
+  }
+  .box_input .btn_clear {
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    top: -3px;
+  }
+  .box_input .error_text {
+    margin: 5px 0 20px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .box_checkbox .label {
+    height: 60px;
+    padding: 4px 21px 0 18px;
+    border-radius: 16px;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+  }
+  .box_checkbox .label svg {
+    width: 10px;
+  }
+  .box_checkbox input:checked + .label {
+    background: #f2f2f2;
+    color: #000;
+  }
+  .box_checkbox input:checked + .label:before {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .register_code {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .policy_desc {
+    font-size: 10px;
+  }
+  .box_policy .policy_content {
+    margin-top: 50px;
+  }
+  .policy_content {
+    height: 325px;
+    padding: 0 0 0 4px;
+    margin: 50px 0 0 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .policy_content a {
+    color: #000;
+  }
+  .policy_content li {
+    padding-left: 15px;
+  }
+  .policy_content li + li {
+    margin-top: 20px;
+  }
+  .policy_content li .num {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+  }
+  .box_policy .policy_content {
+    padding: 0 2px 0;
+    height: auto;
+  }
+
+  .box_bottom {
+    padding-bottom: 28px;
+  }
+  .footer_logo {
+    font-size: 12px;
+  }
+  .footer_info {
+    margin-top: 6px;
+    font-size: 10px;
+  }
+
+  .qr_card {
+    margin-top: 37px;
+    border-radius: 40px;
+    padding: 18px 0 21px;
+  }
+  .qr_card .qr_name {
+    font-size: 16px;
+  }
+  .qr_card .box_qr {
+    width: 140px;
+    height: 140px;
+    padding: 2px;
+    margin-top: 3px;
+  }
+  .qr_card .category {
+    padding: 2px 21px 0;
+    height: 30px;
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  .qr_card .qr_desc {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .box_share {
+    margin-top: 25px;
+    gap: 8px;
+  }
+  .box_share .btn_wallet {
+    width: 126px;
+  }
+  .box_share .btn_share {
+    width: 50px;
+  }
+  .wallet_desc {
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .content_title {
+    margin-top: 43px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .sub_content_title {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 14px;
+    margin-top: 20px;
+  }
+  .sub_content_title ~ .sub_content_title {
+    margin-top: 16px;
+  }
+  .sub_content_title + .list_info.type_qr {
+    margin-top: 4px;
+  }
+
+  .list_info {
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 14px;
+  }
+  .list_info .item_info {
+    gap: 0px;
+  }
+  .list_info .item_info + .item_info {
+    border-width: 1px;
+    margin-top: 14px;
+    padding-top: 14px;
+  }
+
+  .list_info .info_title {
+    font-size: 12px;
+    line-height: 14px;
+    flex: none;
+  }
+
+  .list_info .info_desc,
+  .list_info .info_desc.type_small {
+    font-size: 12px;
+    line-height: 18px;
+    min-width: auto;
+    flex: 1 0;
+    max-width: 177px;
+  }
+
+  .box_info_btn {
+    margin-top: 10px;
+  }
+  .box_info_btn .btn_info {
+    gap: 4px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .box_info_btn .btn_info .icon {
+    width: 10px;
+    transform: translateY(-2px);
+  }
+
+  .list_info.type_night {
+    padding: 10px 14px;
+    margin-top: 8px;
+  }
+  .list_info.type_night .info_desc {
+    max-width: 205px;
+    line-height: 19px;
+  }
+  .list_info.type_night .item_info + .item_info {
+    padding-top: 7px;
+    margin-top: 6px;
+  }
+  .list_info.type_qr {
+    padding: 10px 14px;
+    margin-top: 14px;
+  }
+  .list_info.type_qr .item_info + .item_info {
+    margin-top: 8px;
+    padding-top: 9px;
+  }
+  .list_info.type_qr .info_title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .list_info.type_qr .info_desc {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 210px;
+  }
+  .map_area {
+    margin-top: 30px;
+  }
+  .list_directions {
+    margin-top: 10px;
+  }
+
+  .list_directions .item_direction {
+    gap: 4px;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 0;
+  }
+  .list_directions .item_direction + .item_direction {
+    margin-top: 6px;
+  }
+
+  .list_directions .icon {
+    width: 12px;
+    flex: none;
+    transform: translateY(1px);
+  }
+  .list_station .icon_station {
+    width: 12px;
+    transform: translateY(0);
+  }
+
+  .list_station {
+    gap: 2px;
+    flex-direction: column;
+  }
+
+  .road_desc {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 16px;
+  }
+  .road_desc:before {
+    transform: translateY(2px);
+    left: 2px;
+  }
+  .road_desc .name {
+    margin-right: 4px;
+  }
+
+  .greeting_desc {
+    font-size: 16px;
+    margin-top: 31px;
+    letter-spacing: 0;
+  }
+
+  .notice_desc {
+    margin-top: 29px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  /************* Register Page ************/
+  .page_registation .greeting_desc {
+    margin-top: 30px;
+    font-size: 13px;
+  }
+  .page_registation .box_registration .list_info {
+    margin-top: 30px;
+  }
+  /************* Register Night Page ************/
+
+  .page_registation_night .box_registration .content {
+    padding-bottom: 40px;
+  }
+  .page_registation_night .box_registration .sub_content_title {
+    padding-left: 14px;
+  }
+  .page_registation_night .box_registration .sub_content_title:first-of-type {
+    margin-top: 34px;
+  }
+  .page_registation_night .box_policy .content {
+    padding-bottom: 50px;
+  }
+  .page_registation_night .box_policy2 .content {
+    padding-bottom: 26px;
+  }
+  .page_registation_night .sub_content_title {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .page_registation_night .sub_content_title ~ .sub_content_title {
+    margin-top: 16px;
+  }
+  .page_registation_night .box_comfirm .content {
+    padding-bottom: 0;
+  }
+
+  .page_registation_night .greeting_desc {
+    margin-top: 29px;
+    font-size: 13px;
+  }
+  .page_registation_night .register_code {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .page_registation_night .box_form + .box_info .sub_content_title:first-of-type {
+    margin-top: 34px;
+  }
+  .page_registation_night .box_registration .box_title .title {
+    font-size: 23px;
+    line-height: 29px;
+  }
+  /************* QR Page ************/
+  .page_qr .content {
+    padding-bottom: 0;
+  }
+
+  .page_qr .qr_card {
+    margin-top: 37px;
+  }
+
+  /************* Layer & Share ************/
+  .layer .layer_content {
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .layer_content {
+    padding-top: 200px;
+    justify-content: center;
+  }
+  .layer_content .desc {
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 20px;
+  }
+  .layer .btn {
+    position: static;
+    width: 448x;
+    margin: 122px auto 0;
+  }
+  .layer .box_mail .title {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .layer .box_success .box_text {
+    transform: translateY(-30px);
+  }
+  .layer .box_success .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .layer .box_success .btn {
+    margin-top: 172px;
+  }
+  .layer .box_input {
+    margin: 45px auto 0;
+    max-width: 448px;
+    height: 41px;
+  }
+  .layer .box_input .input {
+    font-size: 18px;
+    height: 41px;
+    border-bottom-width: 3px;
+  }
+  .layer .box_layer_input {
+    width: calc(100% - 60px);
+    margin: 53px 30px 0;
+    border-width: 1px;
+    height: 24px;
+    padding-bottom: 6px;
+  }
+  .layer .box_layer_input .input {
+    font-size: 14px;
+  }
+  .layer .box_layer_input .btn_clear {
+    width: 16px;
+    height: 16px;
+    transform: translateY(-3px);
+  }
+  .layer .box_layer_input .btn_clear:before {
+    width: 16px;
+    height: 16px;
+  }
+  .layer .btn_secondary {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .layer .box_layer_input .error_text {
+    font-size: 10px;
+    padding-top: 7px;
+  }
+}

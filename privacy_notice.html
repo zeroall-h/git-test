@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/share/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/share/favicon-16x16.png" />
+
+  <!-- Favorites Thumbnails -->
+  <link rel="apple-touch-icon" href="./assets/images/share/apple-touch-icon.png" />
+  <link rel="image_src" href="./assets/images/share/share-thumb_200x200.png" />
+  <meta name="image" content="./assets/images/share/share-thumb_200x200.png" />
+  <meta name="thumbnail" content="./assets/images/share/share-thumb_200x200.png" />
+
+  <!-- Default Site info -->
+  <title>QR Mail</title>
+  <meta name="title" content="A Galaxy Event Registration" />
+  <meta name="description" content="This page is A Galaxy Event registration page." />
+  <meta name="keywords" content="samsung, A Galaxy Event, RSVP, A, A80, A70, A50, registration, QR code" />
+  <meta name="apple-mobile-web-app-title" content="A Galaxy Event Registration" />
+
+  <!-- for Share information -->
+  <!-- FB -->
+  <meta property="og:site_name" content="A Galaxy Event Registration" />
+  <meta property="og:title" content="A Galaxy Event Registration" />
+  <meta property="og:description" content="This page is A Galaxy Event registration page." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="./assets/images/share/share-thumb_1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- TW -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Galaxy Event Registration" />
+  <meta name="twitter:description" content="This page is A Galaxy Event registration page." />
+  <meta name="twitter:url" content="./index.html" />
+  <meta name="twitter:image" content="./assets/images/share/share-thumb_200x200.png" />
+
+  <!-- common CSS / JS -->
+  <link type="text/css" rel="stylesheet" href="assets/css/webfont.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <main class="container">
+      <button onclick="showLayer()">팝업</button>
+    </main>
+    <!-- [D] 활성화 시 layer에 is_show 클래스 추가 -->
+    <div class="layer">
+      <!-- [D] 활성화 시 layer_content에 .is_show 클래스 추가 -->
+      <!-- agree & next -->
+      <div class="layer_content">
+        <div class="box_agree">
+          <h2 class="title">Privacy Notice and <br>Coverage Usage </h2>
+          <div class="policy_content">
+            <ol>
+              <li>
+                <span class="num">1. </span>
+                Samsung Electronics Co., Ltd. collects your personal information (name, phone number, and email address)
+                and invitation code through this website to facilitate your registration and confirm your eligibility as
+                an invited guest for the Samsung Galaxy Unpacked event.
+              </li>
+              <li>
+                <span class="num">2. </span>
+                We may disclose or transfer your information to subcontractors that operate the event on our behalf,
+                ensuring they adhere to applicable data privacy-related laws and contractual obligations to safeguard
+                your
+                information. Your information will be retained only as long as necessary for these purposes and will be
+                deleted promptly after the event unless retention is required by law.
+              </li>
+              <li>
+                <span class="num">3. </span>
+                You may choose not to provide your personal information: however, without it, we cannot process your
+                registration or confirm your eligibility, which is necessary for participation in the event.
+              </li>
+              <li>
+                <span class="num">4. </span>
+                You have certain rights regarding your personal information under applicable data privacy laws. To
+                understand and exercise these rights, please refer to our <a href="#">Privacy Policy</a> and <a
+                  href="#">Contact pages.</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="box_btn_bottom">
+          <button type="button" class="btn btn_agree">AGREE</button>
+          <button type="button" class="btn btn_close">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const layer = document.querySelector(".layer");
+    const layerContent = document.querySelector(".layer_content");
+
+    function showLayer() {
+      layer.classList.add("is_show");
+      layerContent.classList.add("is_show");
+    }
+  </script>
+</body>
+
+</html>
